@@ -78,15 +78,18 @@ export const getCoinObj = (chainTicker, chainDefinition) => {
       if (
         komodoUtils.isKomodoCoin(chainTickerUc) &&
         chainTickerUc !== "VRSC" &&
-        chainTickerUc !== "VRSCTEST" && 
+        chainTickerUc !== "VRSCTEST" &&
+        chainTickerUc !== "GRMS" &&		
         chainTickerUc !== "PIRATE"
       ) {
         coinObj.options.daemon = KOMODO_DAEMON; // komodod
 
-        if (chainTickerUc === "KMD")
-          coinObj.options.confName = KOMODO_CONF_NAME; // komodo.conf
+      if (chainTickerUc === "KMD") {
+        coinObj.options.confName = KOMODO_CONF_NAME; // komodo.conf
       } else if (chainTickerUc === 'PIRATE') {
         coinObj.options.daemon = PIRATE_DAEMON;
+      } else if (chainTickerUc === "GRMS") {
+        coinObj.options.daemon = GRMS_DAEMON;
       } else {
         coinObj.options.daemon = DEFAULT_DAEMON; // verusd
       }

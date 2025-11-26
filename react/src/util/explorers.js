@@ -1,5 +1,6 @@
 export const EXPLORER_LIST = {
   KMD: 'https://www.kmdexplorer.io',
+  GRMS: 'https://explorer.grms.io',
   // KMD asset chains
   DION: 'https://explorer.dionpay.com',
   KOIN: 'http://live.block.koinon.cloud',

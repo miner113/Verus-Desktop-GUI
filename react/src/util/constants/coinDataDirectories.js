@@ -4,6 +4,11 @@ export const coinDataDirectories = {
     linux: ".komodo/VRSC",
     win32: "Komodo/VRSC"
   },
+  GRMS: {
+    darwin: "Komodo/GRMS",
+    linux: ".komodo/GRMS",
+    win32: "Komodo/GRMS"
+  },
   KMD: {
     darwin: "Komodo",
     linux: "komodo",
