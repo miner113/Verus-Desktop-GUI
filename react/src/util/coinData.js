@@ -17,6 +17,7 @@ import {
   ERC20,
   VERUSTEST_CONF_NAME,
   PIRATE_DAEMON,
+  GRMS_DAEMON,
   VERUS_CONF_NAME
 } from './constants/componentConstants'
 import { electrum, general } from 'verus-wallet-endpoints'
