@@ -84,7 +84,7 @@ export const getCoinObj = (chainTicker, chainDefinition) => {
       ) {
         coinObj.options.daemon = KOMODO_DAEMON; // komodod
 
-      if (chainTickerUc === "KMD") {
+      if (chainTickerUc === "KMD")
         coinObj.options.confName = KOMODO_CONF_NAME; // komodo.conf
       } else if (chainTickerUc === 'PIRATE') {
         coinObj.options.daemon = PIRATE_DAEMON;
